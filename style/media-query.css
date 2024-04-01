@@ -1,0 +1,37 @@
+@media only screen and (max-width: 850px) {
+    header {
+      display: none;
+    }
+  
+    #Home {
+      margin: 5rem auto;
+    }
+
+    .herosection{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+    }
+    
+    .herodiv{
+      flex-direction: column;
+    }
+
+  
+    .main-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    
+  }
+  
+  @media only screen and (min-width: 850px) {
+    .mobile-nav {
+      display: none;
+    }
+  }
+  
