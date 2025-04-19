@@ -1,37 +1,84 @@
-@media only screen and (max-width: 850px) {
-    header {
+@media (max-width: 768px) {
+  .nav-links {
       display: none;
-    }
-  
-    #Home {
-      margin: 5rem auto;
-    }
-
-    .herosection{
-      display: flex;
-      align-items: center;
-      justify-content: center;
-
-    }
-    
-    .herodiv{
       flex-direction: column;
-    }
+      position: absolute;
+      top: 80px;
+      left: 0;
+      width: 100%;
+      background-color: var(--navbar-bg-color);
+      padding: 20px;
+      box-shadow: var(--navbar-shadow);
+  }
 
-  
-    .main-container {
+  .nav-links.active {
       display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-    }
+  }
 
-    
+  .hamburger {
+      display: block;
   }
-  
-  @media only screen and (min-width: 850px) {
-    .mobile-nav {
-      display: none;
-    }
+
+  .theme-toggle {
+      margin-right: 20px;
   }
-  
+
+  .home-content {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  .home-left {
+      text-align: center;
+  }
+
+  .home-buttons {
+      justify-content: center;
+  }
+
+  .home-socials {
+      justify-content: center;
+  }
+
+  .home-right {
+      width: 100%;
+      max-width: 500px;
+  }
+
+  .about-content {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  .about-text {
+      text-align: center;
+  }
+
+  .about-image {
+      text-align: center;
+  }
+
+  .about-image img {
+      max-width: 300px;
+  }
+
+  .contact-content {
+      flex-direction: column;
+  }
+
+  .contact-form-card,
+  .contact-info-card {
+      width: 100%;
+      max-width: 500px;
+      margin: 0 auto;
+  }
+
+  .footer-content {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  .footer-right .footer-links {
+      flex-direction: column;
+  }
+}
