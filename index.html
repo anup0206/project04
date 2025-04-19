@@ -1,359 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Frontend Developer - Portfolio Website</title>
-    <link rel="stylesheet" href="./style/style.css" />
-    <link rel="stylesheet" href="./style/utility.css" />
-    <link rel="stylesheet" href="./style/media-query.css">
-
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-
-    <link
-      href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-      crossorigin="anonymous"
-    />
-
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css"
-      integrity="sha512-jnSuA4Ss2PkkikSOLtYs8BlYIeeIK1h99ty4YfvRPAlzr377vr3CXDb7sb7eEEBYjDtcYj+AjBH3FLv5uSJuXg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap-utilities.min.css"
-      integrity="sha512-4ocAKAxnrkSm7MvkkF1D435kko3/HWWvoi/U9+7+ln94B/U01Mggca05Pm3W59BIv3abl0U3MPdygAPLo5aeqg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-  </head>
-  <body>
-    <!-- Header section start -->
-   <!-- desktop nav started -->
-
-    <header>
-      <div class="main u-container">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
         <div class="logo">
-          <h1>Anupam Baral</h1>
+            <h1>Anupam Baral</h1>
         </div>
-        <div class="navbar">
-          <a href="#Home" class="a-item">Home</a>
-          <a href="#Blogs" class="a-item">Blogs</a>
-          <a href="#Services" class="a-item">Services</a>
-         
-           <a href="#Project" class="a-item">Project</a>
-          <a href="#Skills" class="a-item">Skills</a>
-          <a href="#Contactus" class="a-item">Contact us</a>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="hamburger">
+            <i class="fas fa-bars"></i>
         </div>
+    </nav>
 
-        <!-- <div class="login">
-        <a href=""><button class="btn btn-no-btn">Sign up</button></a>
-        <a href=""><button class="btn">Sign in</button></a>
-      </div> -->
-      </div>
-    </header>
-   <!-- desktop nav ended -->
-
-   <!-- mobile nav started -->
-
-    <div class="mobile-nav">
-
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">Anupam Baral</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#>Home">Home</a>
-              </li>
-              
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Dropdown link
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                  <li><a class="dropdown-item" href="#Blogs">Blogs</a></li>
-                  <li><a class="dropdown-item" href="#Service">Service</a></li>
-                  <li><a class="dropdown-item" href="#Clients">Clients</a></li>
-                  <li><a class="dropdown-item" href="#Contactus">Contact us</a></li>
-                </ul>
-              </li>
-            </ul>
-          </div>
+    <!-- Home Section -->
+    <section id="home" class="section home">
+        <div class="home-content">
+            <h1>Hi, I'm Anupam Baral</h1>
+            <p>Frontend Web Developer</p>
+            <a href="#contact" class="btn">Hire Me</a>
         </div>
-      </nav>
-  </div>
-
-   <!-- mobile nav ended -->
-    
-    
-
-    <!-- Header section end -->
-
-    <!-- Hero section start -->
-
-    <section class="herosection">
-      <div class="herodiv u-container">
-        <div class="hero-left">
-          <h2>I am a frontend web developer</h2>
-          <p>
-            Welcome to my portfolio! I’m a passionate web developer with a love for . Through my work, I aim to give best websites to you. Whether it’s crafting elegant code, designing captivating visuals, or solving complex problems, I thrive on creativity and continuous learning.
-          </p>
-
-          <div class="hro">
-            <button class="hero-button">Hire me</button>
-            <button class="hero-button hero-btn">
-              <img src="./assects/download.png" alt="" />Contact me
-            </button>
-          </div>
-        </div>
-
-        <div class="hero-right">
-          <img src="./assects/img.png" alt="hero-img" class="hero-img" />
-        </div>
-      </div>
     </section>
 
-    <!-- Hero section end -->
-
-    <!-- Skill and experence started -->
-    <section id="Skills">
-      <div class="skill-head">
-        <h1>Skills and Experences</h1>
-      </div>
-
-      <div class="para">
-        <p>
-          I have been working many languages and i am expert in following
-          languages. If you have any projects related to thos languages then you
-          can contact me.
-        </p>
-      </div>
-
-      <div class="skills-icon">
-        <div class="icon"><i class="fa-brands fa-html5"></i>HTML</div>
-
-        <div class="icon"><i class="fa-brands fa-css3"></i>CSS</div>
-
-        <div class="icon"><i class="fa-brands fa-square-js"></i>JAVASCRIPT</div>
-
-        <div class="icon"><i class="fa-brands fa-react"></i>REACT</div>
-
-        <div class="icon"><i class="fa-brands fa-python"></i>PYTHON</div>
-
-        <div class="icon"><<i class="fa-solid fa-c"></i>C</div>
-        <div class="icon"><i class="ri-tailwind-css-line"></i>TAILWIND</div>
-      </div>
-    </section>
-
-    <!-- Skill and experence ended -->
-
-
-       <!-- PROJECT SECTION -->
-        
-    <section id="Project">
-
-      <div class="project-head">
-        <h1>My Projects</h1>
-      </div>
-
-      <div class="container">
-        <div class="box">
-          <img src="./assects/download (1).jpeg" alt="image" />
-          <div class="inside">
-            <button class="a">Developer</button>
-            <h2>Lorem Ipsum is simply dummy text of the printing</h2>
-            <a href="https://project02-ecru.vercel.app/"> <i class="ri-arrow-right-circle-line"></i></a>
-           
-          </div>
-        </div>
-        <div class="box">
-          <img src="./assects/download (2).jpeg" alt="image" />
-
-          <div class="inside">
-            <button class="b">Designer</button>
-            <h2>Lorem Ipsum is simply dummy text of the printing</h2>
-            <a href="https://project3-snowy-xi.vercel.app/"><i class="ri-arrow-right-circle-line"></i></a>
-            
-          </div>
-        </div>
-        <div class="box">
-          <img src="./assects/download (3).jpeg" alt="image" />
-
-          <div class="inside">
-            <button class="c">Editor</button>
-            <h2>Lorem Ipsum is simply dummy text of the printing</h2>
-            <a href="https://project1-seven-tau.vercel.app/">  <i class="ri-arrow-right-circle-line"></i></a>
-          
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Contact section -->
-
-
-    <section id="Contactus">
-     
-      <div class="contactdiv ">
-
-        <div class="contact-left">
-         <img src="./assects/blob.jpeg" alt="contactpic" class="contact-img">
-        </div>
-
-      
-
-        <div class="contact-right">
-          <div class="cont-head">
-            <h1>Contact Us</h1>
-           </div>
-
-
-       
-         <div class="contact-form">
-           <div class="contact-form-up">  
-            <div class="form-one">
-
-            
-
-                <div class="form-group">
-                  <label for="Full Name">Full Name</label>
-                  <input type="text" required >
-                </div>
-
-                <div class="form-group">
-                  <label for="Email">Email</label>
-                  <input type="email"  required>
-                </div>
-
-                <div class="form-group">
-                  <label for="Message">Message</label>
-                  <input type="text" required >
-                </div>
-
-                <div class="contact-bttn">
-                  <button type="submit">Contact us</button>
-  
-                </div>
-                 
-  
-
-
-          
-
+    <!-- About Section -->
+    <section id="about" class="section about">
+        <h2>About Me</h2>
+        <div class="about-content">
+            <img src="./images/profile.jpg" alt="Profile Picture">
+            <div class="about-text">
+                <p>I'm a passionate frontend web developer with experience in creating responsive and user-friendly websites. My expertise includes HTML, CSS, JavaScript, React, and Tailwind CSS.</p>
+                <p>I love turning ideas into reality through clean code and innovative design. Let's build something amazing together!</p>
+                <a href="./assets/Anupam_Baral_CV.pdf" class="btn" download>Download CV</a>
             </div>
-
-
-            <div class="form-two">
-               <div class="form-two-right">
-                <h3>Contact</h3>
-                <a href="mailto:email@example.com">email@example.com</a>
-
-               </div>
-               <div class="form-two-right">
-                <h3>Based in</h3>
-                <span>San Francisco, California</span>
-
-               </div>
-
-               <div class="linkss">
-                <div class="social-links">
-                  <i class="fa-brands fa-facebook-f"></i>
-                </div>
-                <div class="social-links">
-                  <i class="fa-brands fa-whatsapp"></i>
-                </div>
-                <div class="social-links">
-                  <i class="fa-brands fa-instagram"></i>
-                </div>
-                <div class="social-links">
-                  <i class="fa-brands fa-twitter"></i>
-                </div>
-              </div>
-
-           
-              </div> 
-               </div>
- 
-            
         </div>
+    </section>
 
-      </div>
+    <!-- Services Section -->
+    <section id="services" class="section services">
+        <h2>Services</h2>
+        <div class="services-grid">
+            <div class="service-card">
+                <i class="fas fa-code"></i>
+                <h3>Web Development</h3>
+                <p>Building responsive and dynamic websites using modern technologies.</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-paint-brush"></i>
+                <h3>UI/UX Design</h3>
+                <p>Creating intuitive and visually appealing user interfaces.</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-mobile-alt"></i>
+                <h3>Responsive Design</h3>
+                <p>Ensuring websites look great on all devices.</p>
+            </div>
+        </div>
+    </section>
 
-    
-    </div>
-  </section>
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="section portfolio">
+        <h2>Portfolio</h2>
+        <div class="portfolio-grid">
+            <div class="portfolio-item">
+                <img src="./images/project1.jpg" alt="Project 1">
+                <div class="portfolio-overlay">
+                    <h3>Project One</h3>
+                    <p>A responsive e-commerce website.</p>
+                    <a href="https://project02-ecru.vercel.app/" target="_blank" class="btn">View Project</a>
+                </div>
+            </div>
+            <div class="portfolio-item">
+                <img src="./images/project2.jpg" alt="Project 2">
+                <div class="portfolio-overlay">
+                    <h3>Project Two</h3>
+                    <p>A modern portfolio website.</p>
+                    <a href="https://project3-snowy-xi.vercel.app/" target="_blank" class="btn">View Project</a>
+                </div>
+            </div>
+            <div class="portfolio-item">
+                <img src="./images/project3.jpg" alt="Project 3">
+                <div class="portfolio-overlay">
+                    <h3>Project Three</h3>
+                    <p>A dynamic blog platform.</p>
+                    <a href="https://project1-seven-tau.vercel.app/" target="_blank" class="btn">View Project</a>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <!-- footer started -->
- 
-  <section id="footer">
-  <div class="footer-head">
-    <h1>Code Opacity</h1>
-  </div>
-  <div class="para ">
-    <p>Lets build website together?</p>
-  </div>
+    <!-- Contact Section -->
+    <section id="contact" class="section contact">
+        <h2>Contact Me</h2>
+        <div class="contact-content">
+            <form id="contact-form" class="contact-form">
+                <input type="text" id="name" placeholder="Your Name" required>
+                <input type="email" id="email" placeholder="Your Email" required>
+                <textarea id="message" placeholder="Your Message" required></textarea>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+            <div class="contact-info">
+                <p><i class="fas fa-envelope"></i> anupam@example.com</p>
+                <p><i class="fas fa-phone"></i> +1 234 567 890</p>
+                <p><i class="fas fa-map-marker-alt"></i> San Francisco, California</p>
+            </div>
+        </div>
+    </section>
 
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2025 Anupam Baral. All Rights Reserved.</p>
+        <div class="social-links">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+    </footer>
 
-  <div class="linkss">
-    <div class="social-links">
-      <i class="fa-brands fa-facebook-f"></i>
-    </div>
-    <div class="social-links">
-      <i class="fa-brands fa-whatsapp"></i>
-    </div>
-    <div class="social-links">
-      <i class="fa-brands fa-instagram"></i>
-    </div>
-    <div class="social-links">
-      <i class="fa-brands fa-twitter"></i>
-    </div>
-  </div>
-
-  
-    <div class="center">
-      Copyright &copy; Personal Portfolio. All rights reserved! Designed by Anupam
-    </div>
-
-
-  </section>
-
-
-
-
-  </body>
-
-  
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.min.js" integrity="sha512-ykZ1QQr0Jy/4ZkvKuqWn4iF3lqPZyij9iRv6sGqLRdTPkY69YX6+7wvVGmsdBbiIfN/8OdsI7HABjvEok6ZopQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="script.js"></script>
 </body>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js" integrity="sha512-7Pi/otdlbbCR+LnW+F7PwFcSDJOuUJB3OxtEHbg4vSMvzvJjde4Po1v4BR9Gdc9aXNUNFVUY+SK51wWT8WF0Gg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.esm.min.js" integrity="sha512-p6KKvRUjLcXZtvsFd+01s4jcHKu0PNWplQNHeEHmq+27tF5osNRRNkziDu45B5Mo+0+DE/k1qD0ZI29DHEutww==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
 </html>
